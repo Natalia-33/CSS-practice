@@ -230,13 +230,13 @@
 .link_list > *:not(:last-child) {
   margin-bottom: 12px;
 }
-.list_item {
+.link_item {
   display: block;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
   color: #007bff;
 }
-.link_decoration {
+.link_item:hover {
   text-decoration: underline;
 }
