@@ -8,15 +8,14 @@ const router = express.Router()
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/', function (req, res) {
+router.get('/p-1', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з container
-  res.render('index', {})
+  res.render('p-1', {
+    layout: 'p-1',
+  })
   //                  ↑↑ сюди вводимо JSON дані
 })
-
-// ================================================================
-
-// Підключаємо роутер до бек-енду
 module.exports = router
+// ================================================================
