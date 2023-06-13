@@ -1,0 +1,63 @@
+<div class="page">
+	<div class="page_content">
+		<div class="page_block">
+			<header class="header row g-0">
+				<div class="col-3">
+				{{> logo}}
+				</div>
+
+			<nav class="header_nav col-9">
+				<div class="header_nav_right">
+				{{> nav list=header}}
+				</div>
+			</nav>
+		</div>
+     </header>
+		{{> divider}}
+			<section class="page_block">
+				<div class="main">
+					{{#with main}}
+					<img src="{{image}}" alt="main image">
+					{{> main heading=heading descriotion=descriotion}}
+					{{/with}}
+				</div>
+			</section>
+
+		<main class="featured">
+			{{#each featured}}
+			<div>
+				<img src="{{photo}}" alt="featured_photo">
+    			<h2 class='card_heading'>{{heading}}</h2>
+    			<p class='card_info'>{{info}}</p>
+    			<a class="link">{{linkText}}</a>
+			</div>
+			{{/each}}
+		</main>
+		{{> divider}}
+
+		<main class="actions">
+				{{#each actions}}
+					<div>
+						<h3 class="actions_heading">{{heading}}</h3>
+						<p class="actions_text" url="({{url}})">{{text}}</p>
+					</div>
+				{{/each}}
+		</main>
+		{{> divider}}
+
+		<footer class="footer">
+			<div>
+				 {{> logo}}
+			 <span class="footer_copyright"> @ 2023</span>
+			</div>
+
+			{{#each footer}}
+			<div>
+				<h4 class="title ">{{title}}</h4>
+				{{> nav list=links isVertical=true}}
+			</div>
+			{{/each}}
+
+		</footer>
+	</div>
+</div>  
