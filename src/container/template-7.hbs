@@ -2,73 +2,103 @@
 	<div class="page_content">
 		<header class="header">
 				{{> logo}}
-		
+		{{#with header}}
 			<nav class="nav">
 				{{#each links}}
 					<a class="nav_link link_animation" href="{{url}}">{{text}}</a>	
 				{{/each}}
 			</nav>	
+			{{/with}}
 			</header>
 		{{> divider}}
 
+			<div class="header_ad">
+				{{#with header}}
+				{{#with ad}}
+					<div class="ad">
+						<a href="{{url}}">{{text}}</a>
+					</div>
+				{{/with}}
+				
+				<div class="userOnline">
+					<p>10</p>
+				</div>
+			{{/with}}
+			</div>
 			{{#with hero}}
 				<div class="hero">
-					<h2>{{title}}</h2>
-					<p>{{description}}</p>
+						<h2>{{title}}</h2>
+						<p>{{description}}</p>
 					{{#with button}}
-					<a class='button' href='{{url}}'>{{text}}</a>
+						<a class='button' href='{{url}}'>{{text}}</a>
 					{{/with}}
 				</div>
 			{{/with}}
 
 			{{#with about}}
-				<h4>{{heading}}</h4>
-				<p>{{info}}</p>
+				<div class="about">
+					<h4>{{heading}}</h4>
+					<p>{{info}}</p>
+				</div>
 			{{/with}}
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			<div class="advantages">
-				{{#each advantages}}
-					<div>
-						<strong>{{title}}</strong>
-						<p>{{text}}</p>
-					</div>
-				{{/each}}
-			</div>
-		
-		<footer class="footer">
-			<div>
-				 
-			 <span class="footer_copyright"> @ 2023</span>
-			</div>
 
-			{{#each footer}}
+			<div class="div">
+				<div class="div_title">
+					<h2 class="title">Our Articles</h2>
+				</div>
+				<div class="div_button">
+					<div class="button">View All</div>
+				</div>
+			</div>
+			
+				<div class="articles">
+					{{#each articles}}
+					<div class="art">
+						<img class="img" src="{{photo}}">{{name}}</img>
+						<p>{{description}}</p>
+						<div class="art_button">
+							<div class="button">Read All</div>
+						</div>
+					</div>
+					{{/each}}
+				</div>
+			
+			{{> divider}}
+
+		<div class="footer_pages">
+		{{#with footer}}
+		<div class='pages {{#if isVertical}} vertical {{/if}}'>
+ 			 {{#each pages}}
+			 	<div class="pages">
+    			<a class='{{path}}' class='pages'>{{name}}</a>
+				</div>
+  				{{/each}}
+			</div>
+			<footer class="footer">
+				<div class="footer">
+				<h3 class="footer">{{copyright}}</h3>
+				</div>
+			</footer>
+			
+			
+		{{/with}}
+			</div>
+			
+			
+			
+			
+			
+	
+			
+		
+
+			
 			<div>
 				<h4 class="title ">{{title}}</h4>
 				{{> nav list=links isVertical=true}}
 			</div>
-			{{/each}}
+			
 
-		</footer>
+		
 	</div>
 </div>  
