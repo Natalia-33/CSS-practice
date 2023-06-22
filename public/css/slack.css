@@ -63,6 +63,15 @@
     border-color: var(--color-primary);
     border-width: 2px;
   }
+  .button_primary {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+  .button_secondary {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    border-width: 2px;
+  }
 }
 
 body {
@@ -127,6 +136,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 50px;
+    margin: 0 auto;
   }
   .hero_content {
     display: grid;
@@ -191,7 +201,7 @@ body {
     padding: var(--spacing-3);
     background-color: var(--color-white);
     display: grid;
-    gap: var(--spacing-3);
+    gap: var(--spacing-2);
     font-size: var(--size-2);
     grid-template-rows: min-content min-content 1fr min-content;
     line-height: var(--line-height);
