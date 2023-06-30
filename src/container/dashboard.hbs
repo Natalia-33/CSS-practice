@@ -1,0 +1,380 @@
+<html>
+
+  <head>
+    <title>
+      Dashboard page
+    </title>
+    <meta charset='utf-8' />
+
+    <link href='css/normalize.css' rel='stylesheet' />
+
+    <link href='css/dashboard.css' rel='stylesheet' />
+
+    <link
+      href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'
+      rel='stylesheet'
+    />
+    <meta
+      name='viewport'
+      content='viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    />
+  </head>
+
+  <body>
+
+    <div class='page page--dashboard'>
+      <aside
+        class='page_aside aside vertical vertical--big'
+      >
+        <div class='text aside_logo'>
+          Sidebar
+        </div>
+        <nav class='vertical vertical--small'>
+          <a
+            href='#'
+            class='nav-button nav-button--active click'
+          >
+            <span
+              class='icon nav-button_icon'
+              style="background-image: url('/css/svg/nav/home.svg')"
+            ></span>
+            <span class='text text--light'>Home</span>
+          </a>
+
+          <a
+            href='#'
+            class='button-second button--active click'
+          >
+            <span
+              class='icon button-second_icon'
+              style="background-image: url('/css/svg/orders.svg')"
+            ></span>
+            <span class='name'>Orders</span>
+          </a>
+
+          <a
+            href='#'
+            class='button-last button--active click'
+          >
+            <span
+              class='icon button-last_icon'
+              style="background-image: url('/css/svg/products.svg')"
+            ></span>
+            <span class='title'>Products</span>
+          </a>
+
+          <div class='relative click'>
+            <div class='field field--select'>
+              <span
+                class='text text--light'
+              >Search...</span>
+            </div>
+            <select class='field_select'>
+              <option value='dog'>Dog</option>
+              <option value='cat'>Cat</option>
+              <option value='hamster'>Hamster</option>
+              <option value='parrot'>Parrot</option>
+              <option value='spider'>Spider</option>
+            </select>
+          </div>
+        </nav>
+      </aside>
+      <header class='header'>
+        <div class='layout header_content text--small'>
+          {{! <label class='text' for=''></label> }}
+          <div class='header_search relative'>
+            <input
+              type='text'
+              placeholder='Search'
+              class='text field field--header'
+            />
+            <span
+              class='icon header_icon-search'
+              style="background-image: url('/css/svg/header/search.svg')"
+            ></span>
+            <span
+              class='icon icon--header-settings icon--button icon--color-blue click'
+              style="background-image: url('/css/svg/header/settings.svg')"
+            ></span>
+          </div>
+
+          <div class='header_voice'>
+            <input
+              type='text'
+              placeholder='Search'
+              class='text field field--header'
+            />
+            <span
+              class='icon header_icon-search'
+              style="background-image: url('/css/svg/header/search.svg')"
+            ></span>
+            <span
+              class='icon icon--header-voice icon--button click'
+              style="background-image: url('css/svg/header/voice.svg')"
+            ></span>
+          </div>
+
+          <div class='header_lang'>
+            <input
+              type='text'
+              placeholder='Search'
+              class='text field field--header'
+            />
+            <span
+              class='icon header_icon-search'
+              style="background-image: url('/css/svg/header/search.svg')"
+            ></span>
+            <span
+              class='icon icon--header-lang icon--button click'
+              style="background-image: url('css/svg/header/lang.svg')"
+            ></span>
+          </div>
+
+          <div class='header_help'>
+            <input
+              type='text'
+              placeholder='Search'
+              class='text field field--header'
+            />
+            <span
+              class='icon header_icon-search'
+              style="background-image: url('/css/svg/header/search.svg')"
+            ></span>
+            <span
+              class='icon icon--header-help icon--button click'
+              style="background-image: url('css/svg/header/help.svg')"
+            ></span>
+          </div>
+        </div>
+      </header>
+
+      <main class='main main_double'>
+        <div class='layout'>
+          <section class='box analytic_block'>
+            <div
+              class='analytic analytic--double analytic--blue'
+            >
+              <span
+                class='icon analytic_button icon--button icon--color-blue click'
+                style="background-image: url('/css/svg/analytic/order.svg')"
+              ></span>
+              <div
+                class='relative vertical vertical--small'
+              >
+                <div
+                  class='analytic_title text text--light'
+                >$961</div>
+                <div
+                  class='analytic_info text text--small text--gray'
+                >Total Order</div>
+                <span
+                  class='icon analytic_arrow'
+                  style="background-image: url('/css/svg/analytic/blue-arrow.svg')"
+                ></span>
+              </div>
+            </div>
+
+            <div
+              class='analytic analytic--double analytic--purple'
+            >
+              <span
+                class='icon analytic_button icon--button icon--color-purple click'
+                style="background-image: url('/css/svg/analytic/cash.svg')"
+              ></span>
+              <div
+                class='relative vertical vertical--small'
+              >
+                <div
+                  class='analytic_title text text--light'
+                >$500</div>
+                <div
+                  class='analytic_info text text--small text--gray'
+                >Total earning</div>
+              </div>
+            </div>
+
+              <div class='analytic analytic--small'>
+                <span
+                  class='icon analytic_button icon--button icon--color-blue click'
+                  style="background-image: url('/css/svg/analytic/total.svg')"
+                ></span>
+				  <div class='card'>
+                <div
+                  class='relative vertical vertical--small'
+                >
+                  <div
+                    class='analytic_name text text--light'
+                  >$203k</div>
+                  <div
+                    class='analytic_info text text--small text--gray'
+                  >Total Income</div>
+                </div>
+              </div>
+            </div>
+            <div class='analytic analytic--white'>
+              <span
+                class='icon analytic_button icon--button click'
+                style="background-image: url('/css/svg/analytic/shop.svg')"
+              ></span>
+              <div
+                class='relative vertical vertical--small'
+              >
+                <div
+                  class='analytic_name text text--dark'
+                >$203k</div>
+                <div
+                  class='analytic_info text text--small text--dark'
+                >Total Income</div>
+              </div>
+            </div>
+
+          </section>
+        </div>
+
+        <main class='block main_double'>
+          <div class='block layout_double'>
+            <section class='block block_checkout'>
+				<div class="row"> 
+              <div class=' checkout'>
+                <h1 class='heading'>Purchase List</h1>
+				{{> divider}}
+				<div class="checkout_list">
+					<div class="info--first">
+						<span class="vertical">ID437661</span>
+						<span class="vertical">MAY 11,2023, 1421</span>
+					</div>
+					
+					<div class="info--second">
+						<span class="vertical">AirOn ProCam</span>
+						<span class="vertical">7/8 USB Type C</span>
+					</div>
+					<div class="info--third">
+						<span class="vertical">132.32 EUR</span>
+						<span class="vertical warning">Not paid</span>
+					</div>
+					<div class="info--fourth">
+						<span class="vertical">Customer</span>
+						<span class="vertical">Robin@com.de</span>
+					</div>
+				</div>
+				{{> divider}}
+
+				<div class="checkout_list--double">
+					<div class="info--first">
+						<span class="vertical">ID437661</span>
+						<span class="vertical">MAY 11,2023, 1421</span>
+					</div>
+					
+					<div class="info--second">
+						<span class="vertical">PHILIPS Essential</span>
+						<span class="vertical">7/8 USB Type C</span>
+					</div>
+					<div class="info--third">
+						<span class="vertical">132.32 EUR</span>
+						<span class="vertical success">Pay by STRIPE</span>
+					</div>
+					<div class="info--fourth">
+						<span class="vertical">Customer</span>
+						<span class="vertical">Robin@com.de</span>
+					</div>
+				</div>
+
+				
+              </div>
+            </section>
+
+           <section class="block">
+              <div class='block block_payment'>
+                <div>
+					<h1 class="heading">Payment</h1>
+					<hr>
+					<div class="col-12">
+					<div class="form-check">
+						<input name="card" type="radio" class="form-check-input">
+						<label class="form-check-label">Credit card</label>
+						
+					</div>
+					<div class="form-check">
+						<input name="card" type="radio" class="form-check-input">
+						<label class="form-check-label">Debit card</label>
+						
+					</div>
+					<div class="form-check">
+						<input name="card" type="radio" class="form-check-input">
+						<label class="form-check-label">PayPal</label>
+						
+					</div>
+					</div>
+					<div class="line">
+						<div class="card_line">
+							<label class='text--second' for=''>Name on Card</label>
+							<input type='text' class='text field--first ' /> 
+						</div>
+						<div class="card_line">
+							<label class='text--second' for=''>Credit card number</label>
+							<input type='text' class='text field--first ' /> 
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="card_line">
+							<label class='text--second' for=''>Expiration</label>
+							<input type='text' class='text field--first ' /> 
+						</div>
+						<div class="card_line">
+							<label class='text--second' for=''>CVV</label>
+							<input type='text' class='text field--first ' /> 
+						</div>
+					</div>
+
+					{{> divider}}
+					<div class="line">
+					 <div class='relative click'>
+						<label class='text--second' for=''>Country</label>
+           				 <div class='field field--first'>
+             			 <span class='text text--dark'>Search...</span>
+            	
+						<select class='field_first'>
+							<option value='ukraine'>Ukraine</option>
+							<option value='usa'>USA</option>
+							<option value='england'>England</option>
+							<option value='polland'>Poland</option>
+							<option value='italy'>Italy</option>
+						</select>
+          				</div>
+					</div>
+						<div class='relative click'>
+						<label class='text--second' for=''>State</label>
+           				 <div class='field field--first'>
+             			 <span class='text text--dark'>Search...</span>
+            			
+						<select class='field_first'>
+							<option value='newmexico'>New Mexico</option>
+							<option value='montana'>Montana</option>
+							<option value='arizona'>Arizona</option>
+							<option value='texas'>Texas</option>
+							<option value='minnesota'>Minnesota</option>
+						</select>
+          				</div>
+						</div>
+					</div>
+					{{> divider}}
+				<div class="nav-button--second">
+					<nav class="nav-button--second vertical">
+						<a href="#" class="nav-button--second nav-button--active">
+							 <span class='text text--checkout'>Continue to checkout</span>
+						</a>
+					</nav>
+					</div>
+              </div>
+       
+			</div>
+			</section>
+          </div>
+
+        </main>
+      </main>
+    </div>
+  </body>
+
+</html>

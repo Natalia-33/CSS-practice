@@ -19,6 +19,21 @@ router.get('/p-1', function (req, res) {
 })
 module.exports = router
 // ================================================================
+
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/dashboard', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з container
+  res.render('dashboard', {
+    layout: null,
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+module.exports = router
+
 // ================================================================
 
 // router.get Створює нам один ентпоїнт
